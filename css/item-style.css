@@ -1,0 +1,102 @@
+.container{
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+	outline: 1px solid red;
+}
+
+.clearfix{
+	display:table;
+	content: "";
+	clear: both;
+}
+
+/*-------------------header--------------*/
+.main-header{
+	min-height: 70px;
+	margin-bottom: 56px;
+}
+
+.main-nav{
+	width: 780px;
+	float: left;
+	outline: 1px solid blue;
+}
+
+.user-block{
+	width: 150px;
+	float: right;
+	outline: 1px solid blue;
+}
+
+.bread-crumbs{
+	margin-bottom: 44px;
+}
+/*-------------------main---------------*/
+.item{
+	width: 940px;
+}
+
+.item-gallery{
+	width: 480px;
+	float: left;
+	outline: 1px solid blue;
+}
+
+.item-description{
+	width: 390px;
+	float: right;
+	outline: 1px solid blue;
+}
+
+main.container{
+	margin-bottom: 44px;
+}
+
+
+/*---------------------------footer--------------------*/
+
+.main-footer{
+	padding-top: 54px;
+	padding-bottom: 35px;
+	min-height: 100px;
+	outline: 1px solid #9F0;
+}
+
+.main-footer-adress{
+	width: 320px;
+	margin-right: 60px;
+	float: left;
+	outline: 1px solid #00F;
+}
+
+.main-footer-social{
+	width: 180px;
+	float: left;
+	outline: 1px solid #00F;
+}
+
+.main-footer-developed{
+	width: 160px;
+	float: right;
+	outline: 1px solid #00F;
+}
+
+
+
+.some{
+	width: 200px;
+	margin: 0 auto;
+	outline: 1px solid blue;
+}
+
+.nice{
+	position: absolute;
+	outline: 1px dotted red;
+	left: 50%;
+	margin-left: 150px;
+}
+
+
+
+

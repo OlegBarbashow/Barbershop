@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ru">
     <head>
         <meta charset="utf-8" />
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/index-style.css" rel="stylesheet">
         <title>Барбершоп</title>
     </head>
     <body>
         <header class="main-header">
-        	<div class="container">
-            	<nav>
+        	<div class="container clearfix">
+            	<nav class="main-nav">
                 	<ul>
                         <li>ИНФОРМАЦИЯ</li>
                         <li>НОВОСТИ</li>
@@ -25,22 +27,22 @@
         	<div class="logo">
             	<img src="img/logo.png" height="152" width="368" alt="logotype">
             </div>
-            <section class="features">
-            	<div class="features-fast">
+            <section class="features clearfix">
+            	<div class="features-item">
                 	<b>БЫСТРО</b>
                     <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
                 </div>
-                <div class="features-cool">
+                <div class="features-item">
                 	<b>КРУТО</b>
                     <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
                 </div>
-                <div class="features-expensive">
+                <div class="features-item">
                 	<b>ДОРОГО</b>
                     <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
                 </div>
             </section>
-            <div class="main-content">
-            	<section class="left-block">
+            <div class="index-content clearfix">
+            	<section class="index-content-left">
                 	<h2>НОВОСТИ</h2>
                     <ul class="left-block-news">
                     	<li>
@@ -54,17 +56,17 @@
                     </ul>
                    	<a href="#" class="button" target="_self">ВСЕ НОВОСТИ</a>
                 </section>
-                <section class="right-block">
+                <section class="index-content-right">
                 	<h2>ФОТОГАЛЕРЕЯ</h2>
                     <figure class="gallery">
                     	<img src="img/gallery.jpg" alt="photo from gallery" height="178" width="300">
                     </figure>
-                    <button class="button" type="button" value="НАЗАД"></button>
-                    <button class="button" type="button" value="ВПЕРЕД"></button>
+                    <button class="button" type="button" value="">Вперед</button>
+                    <button class="button" type="button" value="">Назад</button>
                 </section>
             </div>
-            <div class="main-content">
-            	<section class="left-block">
+            <div class="index-content clearfix">
+            	<section class="index-content-left">
                 	<h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
                     <p>
                     	АРБЕРШОП «БОРОДИНСКИЙ»<br>
@@ -78,7 +80,7 @@
                     <button class="button" type="button" value="КАК ПРОЕХАТЬ">КАК ПРОЕХАТЬ</button>
                     <button class="button" type="button" value="ОБРАТНАЯ СВЯЗЬ">ОБРАТНАЯ СВЯЗЬ</button>
                 </section>
-                <section class="right-block">
+                <section class="index-content-right">
                 	<h2>ЗАПИСАТЬСЯ</h2>
                     <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
                     <form method="post" action="" name="">
@@ -92,7 +94,7 @@
             </div>
         </main>
         <footer class="main-footer">
-        	<section class="container">
+        	<section class="container clearfix">
             	<div class="main-footer-adress">
                 	БАРБЕРШОП «БОРОДИНСКИЙ»<br>
                     АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
