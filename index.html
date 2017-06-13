@@ -2,7 +2,8 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8" />
-        <link href="css/reset.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/index-style.css" rel="stylesheet">
         <title>Барбершоп</title>
     </head>
@@ -11,40 +12,40 @@
         	<div class="container clearfix">
             	<nav class="main-nav">
                 	<ul>
-                        <li>ИНФОРМАЦИЯ</li>
-                        <li>НОВОСТИ</li>
-                        <li>ПРАЙС-ЛИСТ</li>
-                        <li>МАГАЗИН</li>
-                        <li>КОНТАКТЫ</li>
+                        <li><a href="#" target="_self">ИНФОРМАЦИЯ</a></li>
+                        <li><a href="#" target="_self">НОВОСТИ</a></li>
+                        <li><a href="#" target="_self">ПРАЙС-ЛИСТ</a></li>
+                        <li><a href="#" target="_self">МАГАЗИН</a></li>
+                        <li><a href="#" target="_self">КОНТАКТЫ</a></li>
                     </ul>
                 </nav>
                 <div class="user-block">
-                	<b>ВХОД</b>
+                	<a href="#" class="login">ВХОД</a>
                 </div>
             </div>
         </header>
         <main class="container">
-        	<div class="logo">
+        	<div class="index-logo">
             	<img src="img/logo.png" height="152" width="368" alt="logotype">
             </div>
             <section class="features clearfix">
             	<div class="features-item">
-                	<b>БЫСТРО</b>
+                	<b class="features-name">БЫСТРО</b>
                     <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
                 </div>
                 <div class="features-item">
-                	<b>КРУТО</b>
+                	<b class="features-name">КРУТО</b>
                     <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
                 </div>
                 <div class="features-item">
-                	<b>ДОРОГО</b>
+                	<b class="features-name">ДОРОГО</b>
                     <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
                 </div>
             </section>
             <div class="index-content clearfix">
             	<section class="index-content-left">
-                	<h2>НОВОСТИ</h2>
-                    <ul class="left-block-news">
+                	<h2 class="index-content-title">НОВОСТИ</h2>
+                    <ul class="news-preview">
                     	<li>
                         	<p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
                             <time datetime="2016-09-25">25 сентября</time>
@@ -54,63 +55,65 @@
                             <time datetime="2016-09-19">19 сентября</time>
                         </li>
                     </ul>
-                   	<a href="#" class="button" target="_self">ВСЕ НОВОСТИ</a>
+                   	<a href="#" class="btn" target="_self">ВСЕ НОВОСТИ</a>
                 </section>
                 <section class="index-content-right">
-                	<h2>ФОТОГАЛЕРЕЯ</h2>
-                    <figure class="gallery">
-                    	<img src="img/gallery.jpg" alt="photo from gallery" height="178" width="300">
-                    </figure>
-                    <button class="button" type="button" value="">Вперед</button>
-                    <button class="button" type="button" value="">Назад</button>
+                	<h2 class="index-content-title">ФОТОГАЛЕРЕЯ</h2>
+                    <div class="gallery">
+                        <figure class="gallery-content">
+                            <img src="img/gallery.jpg" alt="photo from gallery" height="178" width="286">
+                        </figure>
+                        <button  class="btn gallery-prev disabled" type="button" value="">Назад</button>
+                        <button class="btn gallery-next" type="button" value="">Вперед</button>
+                    </div>
                 </section>
             </div>
             <div class="index-content clearfix">
             	<section class="index-content-left">
-                	<h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
-                    <p>
+                	<h2 class="index-content-title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+                    <p class="index-content-contact">
                     	АРБЕРШОП «БОРОДИНСКИЙ»<br>
                         АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
-                        ТЕЛЕФОН: +7 (495) 666-02-66<br>
+                        ТЕЛЕФОН: +7 (495) 666-02-66<br><br>
                         
                         ВРЕМЯ РАБОТЫ:<br>
                         ПН — ПТ: С 10:00 ДО 22:00<br>
                         СБ — ВС: С 10:00 ДО 19:00
                     </p>
-                    <button class="button" type="button" value="КАК ПРОЕХАТЬ">КАК ПРОЕХАТЬ</button>
-                    <button class="button" type="button" value="ОБРАТНАЯ СВЯЗЬ">ОБРАТНАЯ СВЯЗЬ</button>
+                    <button class="btn" type="button" value="КАК ПРОЕХАТЬ">КАК ПРОЕХАТЬ</button>
+                    <button class="btn" type="button" value="ОБРАТНАЯ СВЯЗЬ">ОБРАТНАЯ СВЯЗЬ</button>
                 </section>
                 <section class="index-content-right">
-                	<h2>ЗАПИСАТЬСЯ</h2>
+                	<h2 class="index-content-title">ЗАПИСАТЬСЯ</h2>
                     <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-                    <form method="post" action="" name="">
-                    	<input type="date" name="date" class="main-content-form" placeholder="ДАТА">
-                        <input type="time" name="time" class="main-content-form" placeholder="ВРЕМЯ">
+                    <form method="post" class="appointment-form" action="" name="">
+                    	<input type="text" name="date" class="main-content-form" placeholder="ДАТА">
+                        <input type="text" name="time" class="main-content-form" placeholder="ВРЕМЯ">
                         <input type="text" name="text" class="main-content-form" placeholder="ВАШЕ ИМЯ">
                         <input type="tel" name="tel" class="main-content-form" placeholder="ТЕЛЕФОН">
-                        <button type="submit" name="" class="button" value="ОТПРАВИТЬ">ОТПРАВИТЬ</button>
+                        <button type="submit" name="" class="btn" value="ОТПРАВИТЬ">ОТПРАВИТЬ</button>
                     </form>
                 </section>
             </div>
         </main>
         <footer class="main-footer">
         	<section class="container clearfix">
-            	<div class="main-footer-adress">
+            	<section class="footer-contacts">
                 	БАРБЕРШОП «БОРОДИНСКИЙ»<br>
                     АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-                    КАК НАС НАЙТИ?<br>
+                    <a href="#">КАК НАС НАЙТИ?</a><br>
                     ТЕЛЕФОН: +7 (495) 666-02-66
-                </div>
-                <div class="main-footer-social">
-                	<b>ДАВАЙТЕ ДРУЖИТЬ!</b>
-                    <div class="social social-vkontacte"></div>
-                    <div class="social social-facebook"></div>
-                    <div class="social social-instagram"></div>
-                </div>
-                <div class="main-footer-developed">
-                	<b>РАЗРАБОТАНО:</b><br>
-                    <a href="#" class="button" target="_blank">htmlacademy.ru:</a>
-                </div>
+                </section>
+                <section class="footer-social">
+                	<p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+                    <a href="#" class="social-btn social-btn-vk">ВКонтакте</a>
+                    <a href="#" class="social-btn social-btn-fb">Facebook</a>
+                    <a href="#" class="social-btn social-btn-inst">Instagram</a>
+                </section>
+                <section class="footer-copyright">
+                	<p>РАЗРАБОТАНО:</p>
+                    <a href="#" class="btn" target="_blank">htmlacademy.ru:</a>
+                </section>
             </section>
         </footer>
     </body>
