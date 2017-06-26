@@ -2,93 +2,114 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8" />
-        <link href="css/reset.css" rel="stylesheet">
-        <link href="css/price-style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/index-style.css" rel="stylesheet">
         <title>Барбершоп</title>
     </head>
-    <body>
+    <body class="inner-page">
         <header class="main-header">
         	<div class="container clearfix">
             	<nav class="main-nav">
+                <a href="index.html" class="logo-inner">
+                	<img alt="Барбершоп" src="img/header-logo.png" height="24" width="111">
+                </a>
                 	<ul>
-                        <li>ИНФОРМАЦИЯ</li>
-                        <li>НОВОСТИ</li>
-                        <li>ПРАЙС-ЛИСТ</li>
-                        <li>МАГАЗИН</li>
-                        <li>КОНТАКТЫ</li>
+                        <li>
+                        	<a href="#" target="_self">ИНФОРМАЦИЯ</a>
+                        </li>
+                        <li>
+                        	<a href="#" target="_self">НОВОСТИ</a>
+                        </li>
+                        <li class="active">
+                        	<span>ПРАЙС-ЛИСТ</span>
+                        </li>
+                        <li>
+                        	<a href="#" target="_self">МАГАЗИН</a>
+                        </li>
+                        <li>
+                        	<a href="#" target="_self">КОНТАКТЫ</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="user-block">
-                	<b>ВХОД</b>
+                	<a href="#" class="login">ВХОД</a>
                 </div>
             </div>
         </header>
         <main class="container">
-        	<h1>ПРАЙС-ЛИСТ</h1>
-        	<ul class="bread-crumbs">
-            	<li>
-                	<a href="#" target="_self" title="">ГЛАВНАЯ</a>
-                </li>
-                <li>
-                	<a href="#" target="_self" title="">ПРАЙС-ЛИСТ</a>
-                </li>
-            </ul>
-            <b>ИСТИННО МУЖСКАЯ КЛАССИКА</b>
-            <div class="price-content clearfix">
-            	<section class="price-content-means">
-                	<h2>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h2>
-                    <ul>
-                    	<li>Baxter of California</li>
-                        <li>Mr Natty</li>
-                        <li>Suavecito</li>
-                        <li>Malin+Goetz</li>
-                    </ul>
-                </section>
-                <section class="price-content-coast">
-                	<h2>ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:</h2>
-                    <table>
-                    	<tr>
-                        	<td>СТРИЖКА</td>
-                            <td>1500</td>
-                        </tr>
-                        <tr>
-                        	<td>СТРИЖКА БОРОДЫ</td>
-                            <td>500</td>
-                        </tr>
-                        <tr>
-                        	<td>НАКРУТКА УСОВ</td>
-                            <td>350</td>
-                        </tr>
-                    </table>
-                </section>
+        	<div class="inner-page-title">
+                <h1>ПРАЙС-ЛИСТ</h1>
+                <ul class="breadcrumbs">
+                    <li>
+                    	<a href="index.html">ГЛАВНАЯ</a>
+                    </li>
+                    <li class="current">
+                    	ПРАЙС-ЛИСТ
+                    </li>
+                </ul>
             </div>
-            <section class="price-content-about">
-            	<h2>НЕСКОЛЬКО СЛОВ О НАС:</h2>
-                <p class="about-left">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-                <p class="about-right">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
-            </section>
-            
-            
-            
+            <div class="inner-content">
+                <div class="big-heading">
+                    <h2>ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
+                </div>
+                <div class="inner-columns clearfix">
+                	<div class="inner-column-left">
+                        <h3>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО<br> ЛУЧШИЕ СРЕДСТВА:</h3>
+                        <ul class="custom-list-1">
+                            <li>Baxter of California</li>
+                            <li>Mr Natty</li>
+                            <li>Suavecito</li>
+                            <li>Malin+Goetz</li>
+                        </ul>
+                   </div>
+                   <div class="inner-column-right">
+                   <h3>ЦЕНЫ НА УСЛУГИ<br> НАШИХ МАСТЕРОВ:</h3>
+                       <table class="price-table">
+                        <tr>
+                            <td>СТРИЖКА</td>
+                            <td>1500 Р.</td>
+                        </tr>
+                        <tr>
+                            <td>СТРИЖКА БОРОДЫ</td>
+                            <td>500 Р.</td>
+                        </tr>
+                        <tr>
+                            <td>НАКРУТКА УСОВ</td>
+                            <td>350 Р.</td>
+                        </tr>
+                       </table>
+                   </div>
+               </div>
+               <div class="inner-columns clearfix">
+                   <h3>НЕСКОЛЬКО СЛОВ О НАС:</h3>
+                   <div class="inner-column-left">
+                       <p class="short">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+                   </div>
+                   <div class="inner-column-right">
+                   	   <p class="short">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+               	   </div>
+               </div>
+            </div>  
         </main>
         <footer class="main-footer">
         	<section class="container clearfix">
-            	<div class="main-footer-adress">
+            	<section class="footer-contacts">
                 	БАРБЕРШОП «БОРОДИНСКИЙ»<br>
                     АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-                    КАК НАС НАЙТИ?<br>
+                    <a href="#">КАК НАС НАЙТИ?</a><br>
                     ТЕЛЕФОН: +7 (495) 666-02-66
-                </div>
-                <div class="main-footer-social">
-                	<b>ДАВАЙТЕ ДРУЖИТЬ!</b>
-                    <div class="social social-vkontacte"></div>
-                    <div class="social social-facebook"></div>
-                    <div class="social social-instagram"></div>
-                </div>
-                <div class="main-footer-developed">
-                	<b>РАЗРАБОТАНО:</b><br>
-                    <a href="#" class="button" target="_blank">htmlacademy.ru:</a>
-                </div>
+                </section>
+                <section class="footer-social">
+                	<p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+                    <a href="#" class="social-btn social-btn-vk">ВКонтакте</a>
+                    <a href="#" class="social-btn social-btn-fb">Facebook</a>
+                    <a href="#" class="social-btn social-btn-inst">Instagram</a>
+                </section>
+                <section class="footer-copyright">
+                	<p>РАЗРАБОТАНО:</p>
+                    <a href="#" class="btn" target="_blank">htmlacademy.ru:</a>
+                </section>
             </section>
         </footer>
     </body>

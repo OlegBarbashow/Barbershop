@@ -2,8 +2,9 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8" />
-        <link href="css/reset.css" rel="stylesheet">
-        <link href="css/shop-style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/shop-style.css">
         <title>Барбершоп</title>
     </head>
     <body>
@@ -11,15 +12,15 @@
         	<div class="container clearfix">
             	<nav class="main-nav">
                 	<ul>
-                        <li>ИНФОРМАЦИЯ</li>
-                        <li>НОВОСТИ</li>
-                        <li>ПРАЙС-ЛИСТ</li>
-                        <li>МАГАЗИН</li>
-                        <li>КОНТАКТЫ</li>
+                        <li><a href="#" target="_self">ИНФОРМАЦИЯ</a></li>
+                        <li><a href="#" target="_self">НОВОСТИ</a></li>
+                        <li><a href="price.html" target="_self">ПРАЙС-ЛИСТ</a></li>
+                        <li class="active"><span>МАГАЗИН</span></li>
+                        <li><a href="#" target="_self">КОНТАКТЫ</a></li>
                     </ul>
                 </nav>
                 <div class="user-block">
-                	<b>ВХОД</b>
+                	<a href="#" class="login">ВХОД</a>
                 </div>
             </div>
         </header>
@@ -75,11 +76,11 @@
                             </li>
                         </ul>
                     </fieldset>
+                    <button type="button" class="btn">Показать</button>
                 </form>
                 <section class="goods">
                 	<article>
                     	<img src="" height="" width="" alt="">
-                        <
                     </article>
                 </section>
             </div>

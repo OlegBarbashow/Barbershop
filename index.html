@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
     <head>
         <meta charset="utf-8" />
@@ -14,8 +14,8 @@
                 	<ul>
                         <li><a href="#" target="_self">ИНФОРМАЦИЯ</a></li>
                         <li><a href="#" target="_self">НОВОСТИ</a></li>
-                        <li><a href="#" target="_self">ПРАЙС-ЛИСТ</a></li>
-                        <li><a href="#" target="_self">МАГАЗИН</a></li>
+                        <li><a href="price.html" target="_self">ПРАЙС-ЛИСТ</a></li>
+                        <li><a href="shop.html" target="_self">МАГАЗИН</a></li>
                         <li><a href="#" target="_self">КОНТАКТЫ</a></li>
                     </ul>
                 </nav>
@@ -80,7 +80,7 @@
                         ПН — ПТ: С 10:00 ДО 22:00<br>
                         СБ — ВС: С 10:00 ДО 19:00
                     </p>
-                    <button class="btn" type="button" value="КАК ПРОЕХАТЬ">КАК ПРОЕХАТЬ</button>
+                    <button class="btn js-open-map" type="button" value="КАК ПРОЕХАТЬ">КАК ПРОЕХАТЬ</button>
                     <button class="btn" type="button" value="ОБРАТНАЯ СВЯЗЬ">ОБРАТНАЯ СВЯЗЬ</button>
                 </section>
                 <section class="index-content-right">
@@ -116,5 +116,28 @@
                 </section>
             </section>
         </footer>
+        <div class="modal-content">
+        	<button type="button" class="modal-content-close" title="Закрыть">Закрыть</button>
+            <h2 class="modal-content-title">Личный кабинет</h2>
+            <p>Введите свой логин и пароль</p>
+            <form method="post" action="formdata.php" class="login-form">
+                <input type="text" name="login" class="icon-login" placeholder="Логин">
+                <input type="password" name="password" class="icon-password" placeholder="Пароль">
+                <label class="login-checkbox">
+                	<input  type="checkbox" name="remember">
+                    <span class="checkbox-indicator"></span>
+                    Запомните меня
+                </label>
+                <a href="#" class="restore">Я забыл пароль!</a>
+                <button class="btn" type="submit">Войти</button>
+            </form>
+        </div>
+        
+        <div class="modal-content-map">
+        	<button class="modal-content-close" type="button">Закрыть</button>
+            <div id="yandex-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6146657631223!2d30.32026621637818!3d59.93853598187613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca77c663%3A0xe2913435672b14c9!2s21Shop!5e0!3m2!1sru!2sua!4v1498483959218" width="767" height="561" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        </div>
+        <div class="modal-overlay"></div>
+        <script src="js/popup.js"></script>
     </body>
 </html>
